@@ -6,14 +6,16 @@ Live link: https://qennys.github.io/hw04-l-systems/ \
 Name: Yilei Li PennKey: 47053708
 
 ## Description
-This project is to replicate the jellybean-like creature in Fall Guys: Ultimate Knockout. 
+This project is to implement the L-System.
 
-The body is made of a substraction between a normally placed cylinder and a Horizontally placed cylinder. The actual face is made of a
-thin cylinder. The two pupils are also made of cylinders. The arms and fingers are cones and round cones blended together. 
+I also implmented a dusty, orange background by fbm noise function to incorporate the autumn theme.
 
-As for the animation, I used sin function to make him blink over time. I also added a bias function onto the sin function to make the blink faster. 
 
-I also implemented soft shadows and various material in lambert and Blinn-Phong shading.
+## Controls
+- `Iterations`: change the number of iterations in L-System
+- `Angle`: change the angle in L-System
+- `leaves_color`: change the color of leaves
 
 ## Sources
-- [IQ's Article on SDFs](http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm)
+- [Online L-system renderer](http://www.kevs3d.co.uk/dev/lsystems/)
+- [Algorithm of L-system](http://algorithmicbotany.org/papers/abop/abop-ch1.pdf)

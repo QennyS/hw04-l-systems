@@ -21,6 +21,7 @@ I also implmented a dusty, orange background by fbm noise function to incorporat
 - `_`: rotate negatively around Y axis
 
 ### Randomness
+The rorating amount is an angle with some random offset added.
 
 ## Controls
 - `Iterations`: change the number of iterations in L-System

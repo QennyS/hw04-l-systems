@@ -11,12 +11,16 @@ This project is to implement the L-System.
 I also implmented a dusty, orange background by fbm noise function to incorporate the autumn theme.
 
 ### Drawing Rules
-- `F`:  scale down a little bit, expand forward
-- `L`: c
+- `F`: expand forward and scale down a little bit
+- `L`: draw a leaf
 - `+`: rotate positively around Z axis
+- `-`: rotate negatively around Z axis
+- `~`: rotate positively around X axis
+- `*`: rotate negatively around X axis
+- `=`: rotate positively around Y axis
+- `_`: rotate negatively around Y axis
 
- drawing rules used to interpret the expanded axiom: "F" -> Scale our current Turtle down by a small amount, move forward, and create a Branch. "L" -> Create a Leaf at our current Turtle's position. "[" -> Push our current Turtle onto the stack. "]" -> Pop a new Turtle from our stack. "+" -> Rotate our current Turtle a positve amount around the forward axis. The amount is the specified angle plus a small randomly determined offset. "=" -> Rotate our current Turtle a positive amount around the up axis. "~" -> Rotate our current Turtle a positive amount around the right axis. "-" -> Rotate our current Turtle a negative amount around the forward axis. "_" -> Rotate our current Turtle a negative amount around the up axis. "*" -> Rotate our current Turtle a negative amount around the right axis.
-
+### Randomness
 
 ## Controls
 - `Iterations`: change the number of iterations in L-System

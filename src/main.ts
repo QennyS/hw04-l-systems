@@ -34,12 +34,12 @@ function loadScene() {
   screenQuad = new ScreenQuad();
   screenQuad.create();
 
-  let branchobj: string = readTextFile(branchStr);
-  branch = new Mesh(branchobj, vec3.fromValues(0,0,0));
+  //let branchobj: string = readTextFile('./src/obj/branch.obj');
+  branch = new Mesh(branchStr, vec3.fromValues(0,0,0));
   branch.create();
 
-  let leafobj: string = readTextFile(leafStr);
-  leaf = new Mesh(leafobj, vec3.fromValues(0,0,0));
+  //let leafobj: string = readTextFile('./src/obj/Leaf.obj');
+  leaf = new Mesh(leafStr, vec3.fromValues(0,0,0));
   leaf.create();
 
   let ls : LSystem = new LSystem(axiom, iter, angle);

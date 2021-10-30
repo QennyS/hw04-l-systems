@@ -7957,11 +7957,11 @@ let leafColor = __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValu
 function loadScene() {
     screenQuad = new __WEBPACK_IMPORTED_MODULE_3__geometry_ScreenQuad__["a" /* default */]();
     screenQuad.create();
-    let branchobj = readTextFile(__WEBPACK_IMPORTED_MODULE_6__globals__["a" /* branchStr */]);
-    branch = new __WEBPACK_IMPORTED_MODULE_9__geometry_Mesh__["a" /* default */](branchobj, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0));
+    //let branchobj: string = readTextFile('./src/obj/branch.obj');
+    branch = new __WEBPACK_IMPORTED_MODULE_9__geometry_Mesh__["a" /* default */](__WEBPACK_IMPORTED_MODULE_6__globals__["a" /* branchStr */], __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0));
     branch.create();
-    let leafobj = readTextFile(__WEBPACK_IMPORTED_MODULE_6__globals__["c" /* leafStr */]);
-    leaf = new __WEBPACK_IMPORTED_MODULE_9__geometry_Mesh__["a" /* default */](leafobj, __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0));
+    //let leafobj: string = readTextFile('./src/obj/Leaf.obj');
+    leaf = new __WEBPACK_IMPORTED_MODULE_9__geometry_Mesh__["a" /* default */](__WEBPACK_IMPORTED_MODULE_6__globals__["c" /* leafStr */], __WEBPACK_IMPORTED_MODULE_0_gl_matrix__["d" /* vec3 */].fromValues(0, 0, 0));
     leaf.create();
     let ls = new __WEBPACK_IMPORTED_MODULE_8__LSystem__["a" /* default */](axiom, iter, angle);
     let branches = ls.branches;

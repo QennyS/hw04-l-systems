@@ -20,6 +20,8 @@ I also implmented a dusty, orange background by fbm noise function to incorporat
 - `=`: rotate positively around Y axis
 - `_`: rotate negatively around Y axis
 
+The axiom is ```FX```.
+
 ### Randomness
 The rorating amount is an angle with some random offset added.
 

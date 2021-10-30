@@ -5,7 +5,7 @@ import Square from './geometry/Square';
 import ScreenQuad from './geometry/ScreenQuad';
 import OpenGLRenderer from './rendering/gl/OpenGLRenderer';
 import Camera from './Camera';
-import {setGL} from './globals';
+import {setGL, branchStr, leafStr} from './globals';
 import ShaderProgram, {Shader} from './rendering/gl/ShaderProgram';
 import LSystem from './LSystem'; // for LSystem
 import Mesh from './geometry/Mesh'; // for obj loading
@@ -34,11 +34,11 @@ function loadScene() {
   screenQuad = new ScreenQuad();
   screenQuad.create();
 
-  let branchobj: string = readTextFile('./src/obj/branch.obj');
+  let branchobj: string = readTextFile(branchStr);
   branch = new Mesh(branchobj, vec3.fromValues(0,0,0));
   branch.create();
 
-  let leafobj: string = readTextFile('./src/obj/Leaf.obj');
+  let leafobj: string = readTextFile(leafStr);
   leaf = new Mesh(leafobj, vec3.fromValues(0,0,0));
   leaf.create();
 
